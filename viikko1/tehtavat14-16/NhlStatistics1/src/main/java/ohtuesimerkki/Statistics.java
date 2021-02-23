@@ -9,7 +9,7 @@ public class Statistics {
     private List<Player> players;
 
     public Statistics(Reader r) {
-        PlayerReader reader = (PlayerReader) r;
+       Reader reader = r;
         players = reader.getPlayers();       
     }
 
@@ -40,7 +40,7 @@ public class Statistics {
         ArrayList<Player> topScorers = new ArrayList<Player>();
         Iterator<Player> playerIterator = players.iterator();
         
-        while (howMany>=0) {
+        while (howMany>0) {
             topScorers.add( playerIterator.next() );            
             howMany--;
         }
