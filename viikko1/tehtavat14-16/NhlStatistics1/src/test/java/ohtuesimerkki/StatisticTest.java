@@ -48,6 +48,16 @@ public class StatisticTest {
     public void topScorerPalauttaaParhaan(){
         assertEquals(stats.topScorers(1).size(), 1);
     }
+
+    @Test
+    public void topScorerPalauttaaParhaanNimiOikein(){
+        assertEquals(stats.topScorers(1).get(0).getName(), "Connor McDavid");
+    }
+
+    @Test
+    public void topScorerPalauttaaKolmeParasta(){
+        assertEquals(stats.topScorers(3).size(), 3);
+    }
 }
 
 class PlayerReaderStub implements Reader{
