@@ -29,3 +29,5 @@
 - git push origin haara3	(osoitetaan haaraan 3 koska haara ei ole trackaava)
 
 (siirryttiin toiseen kopioon)
+- git checkout haara3 
+- git pull 
