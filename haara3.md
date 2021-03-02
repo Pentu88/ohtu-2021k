@@ -18,3 +18,14 @@
 - touch secret.md
 - git add secret.md
 - git commit -m "<MSG>"
+- git push
+
+(siirryttiin alkuperäiseen kopioon)
+- git checkout haara3 		(siirrytään oikeaan haaraan)
+- git pull origin haara3	(osoitetaan haaraan 3 koska haara ei ole trackaava)
+- touch lastTest.md
+- git add lastTest.md
+- git commit -m "<MSG>"
+- git push origin haara3	(osoitetaan haaraan 3 koska haara ei ole trackaava)
+
+(siirryttiin toiseen kopioon)
