@@ -1,1 +1,1 @@
-![ClassDiagram](verkkokauppa1.png)
+![ClassDiagram](Verkkokauppa1.png)
