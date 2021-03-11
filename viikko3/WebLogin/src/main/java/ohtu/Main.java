@@ -91,7 +91,9 @@ public class Main {
     public static AuthenticationService authenticationService(){
         if ( dao==null ) {
           dao = new FileUserDao("salasanat.txt");  
-        } if (authService==null) {
+        }
+
+        if (authService==null) {
            authService = new AuthenticationService(dao); 
         }
 
