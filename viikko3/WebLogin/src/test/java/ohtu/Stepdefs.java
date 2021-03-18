@@ -12,8 +12,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 public class Stepdefs {
-    WebDriver driver = new ChromeDriver();
-    // WebDriver driver = new HtmlUnitDriver();
+    // WebDriver driver = new ChromeDriver();
+    WebDriver driver = new HtmlUnitDriver();
     String baseUrl = "http://localhost:4567";
     
     @Given("login is selected")
