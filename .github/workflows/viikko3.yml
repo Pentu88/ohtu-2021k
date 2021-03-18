@@ -1,0 +1,49 @@
+name: Viikko 3
+
+on:
+  push:
+    paths:
+    - 'viikko3/**'
+    
+jobs:
+  LoginCucumber:
+  
+    runs-on: ubuntu-latest
+    
+    defaults:
+      run:
+        working-directory: ./viikko3/LoginCucumber/
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up JDK 1.11
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.11
+      
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+      
+    - name: Test with Gradle
+      run: ./gradlew test
+      
+   WebLogin:
+  
+    runs-on: ubuntu-latest
+    
+    defaults:
+      run:
+        working-directory: ./viikko3/WebLogin/
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up JDK 1.11
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.11
+      
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+      
+    - name: Test with Gradle
+      run: ./gradlew test    
