@@ -10,6 +10,8 @@ jobs:
   run_tests:
 
     runs-on: ubuntu-latest
+    env: 
+      working-directory: ./viikko3/WebLogin/
 
     steps:
     - uses: actions/checkout@v2
@@ -17,11 +19,10 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.11
-        
-    - name: Move to right folder
-      run: cd viikko3/WebLogin/
       
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
+      working-directory: ${{env.working-directory}}
+      
     - name: Test with Gradle
       run: ./gradlew test
