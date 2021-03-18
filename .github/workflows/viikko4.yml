@@ -6,6 +6,27 @@ on:
     - 'viikko4/**'
     
 jobs:
+  MockitoDemo:
+  
+    runs-on: ubuntu-latest
+    
+    defaults:
+      run:
+        working-directory: ./viikko4/MockitoDemo/
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up JDK 1.11
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.11
+      
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+      
+    - name: Test with Gradle
+      run: ./gradlew test
+
   MaksukorttiMockito:
   
     runs-on: ubuntu-latest
@@ -25,4 +46,4 @@ jobs:
       run: chmod +x gradlew
       
     - name: Test with Gradle
-      run: ./gradlew test
+      run: ./gradlew test      

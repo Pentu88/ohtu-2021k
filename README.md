@@ -17,6 +17,7 @@ https://github.com/Pentu88/ohtu-2021-viikko1
 - WebLogin
 
 ![GitHub Actions](https://github.com/Pentu88/ohtu-2021k/workflows/Viikko%204/badge.svg)
+- MockitoDemo
 - MaksukorttiMockito
 
 
