@@ -33,7 +33,7 @@ jobs:
     
     defaults:
       run:
-        working-directory: ./viikko3/NhlStatistics1/
+        working-directory: ./viikko1/NhlStatistics1/
 
     steps:
     - uses: actions/checkout@v2
