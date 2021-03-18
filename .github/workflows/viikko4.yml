@@ -7,11 +7,12 @@ on:
     
 jobs:
   MaksukorttiMockito:
-    defaults:
-    run:
-      working-directory: ./viikko4/MaksukorttiMockito/
-
+  
     runs-on: ubuntu-latest
+    
+    defaults:
+      run:
+        working-directory: ./viikko4/MaksukorttiMockito/
 
     steps:
     - uses: actions/checkout@v2
