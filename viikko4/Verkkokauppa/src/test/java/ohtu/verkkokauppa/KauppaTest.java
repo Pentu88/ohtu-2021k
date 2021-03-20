@@ -54,9 +54,22 @@ public class KauppaTest {
     }
 
     @Test
-    public void ostoksenPaaytyttyaPankinMetodiaTilisiirtoKutsutaanOikeillaArvoillaKaksiTuotetta() {
-        // määritellään että tuote numero 2 on makkara jonka hinta on 7 ja saldo 12
-        when(varasto.saldo(2)).thenReturn(12);
+    public void ostoksenPaaytyttyaPankinMetodiaTilisiirtoKutsutaanOikeillaArvoillaKaksiSamaaTuotetta() {
+        // tehdään ostokset
+        k.aloitaAsiointi();
+        k.lisaaKoriin(1);     // ostetaan tuotetta numero 1 eli maitoa
+        k.lisaaKoriin(1);     // ostetaan tuotetta numero 1 eli maitoa
+        k.tilimaksu("pekka", "12345");
+
+        // sitten suoritetaan varmistus, että pankin metodia tilisiirto on kutsuttu
+        verify(pankki).tilisiirto(anyString(), eq(42), eq("12345"), eq("33333-44455"), eq(10));
+        // toistaiseksi ei välitetty kutsussa käytetyistä parametreista
+    }
+
+    @Test
+    public void ostoksenPaaytyttyaPankinMetodiaTilisiirtoKutsutaanOikeillaArvoillaKaksiEriTuotetta() {
+        // määritellään että tuote numero 2 on makkara jonka hinta on 7 ja saldo 1
+        when(varasto.saldo(2)).thenReturn(1);
         when(varasto.haeTuote(2)).thenReturn(new Tuote(1, "makkara", 7));
 
         // tehdään ostokset
@@ -67,6 +80,23 @@ public class KauppaTest {
 
         // sitten suoritetaan varmistus, että pankin metodia tilisiirto on kutsuttu
         verify(pankki).tilisiirto(anyString(), eq(42), eq("12345"), eq("33333-44455"), eq(12));
+        // toistaiseksi ei välitetty kutsussa käytetyistä parametreista
+    }
+
+    @Test
+    public void ostoksenPaaytyttyaPankinMetodiaTilisiirtoKutsutaanOikeillaArvoillaKaksiEriTuotettaLoppu() {
+        // määritellään että tuote numero 2 on makkara jonka hinta on 7 ja saldo 0
+        when(varasto.saldo(2)).thenReturn(0);
+        when(varasto.haeTuote(2)).thenReturn(new Tuote(1, "makkara", 7));
+
+        // tehdään ostokset
+        k.aloitaAsiointi();
+        k.lisaaKoriin(1);     // ostetaan tuotetta numero 1 eli maitoa
+        k.lisaaKoriin(2);     // ostetaan tuotetta numero 1 eli maitoa
+        k.tilimaksu("pekka", "12345");
+
+        // sitten suoritetaan varmistus, että pankin metodia tilisiirto on kutsuttu
+        verify(pankki).tilisiirto(anyString(), eq(42), eq("12345"), eq("33333-44455"), eq(5));
         // toistaiseksi ei välitetty kutsussa käytetyistä parametreista
     }
 }
