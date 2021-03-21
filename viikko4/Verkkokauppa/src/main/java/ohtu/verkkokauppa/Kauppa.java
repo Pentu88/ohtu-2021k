@@ -27,6 +27,9 @@ public class Kauppa {
     public void poistaKorista(int id) {
         Tuote t = varasto.haeTuote(id); 
         varasto.palautaVarastoon(t);
+
+        // BUGI korjaus
+        ostoskori.poista(t);
     }
 
     public void lisaaKoriin(int id) {
