@@ -10,6 +10,7 @@ public class Main {
           
         Matcher m = new And( new HasAtLeast(5, "goals"),
                              new HasAtLeast(5, "assists"),
+                             new HasFewerThan(22, "goals"),
                              new PlaysIn("PHI")
         );
         
