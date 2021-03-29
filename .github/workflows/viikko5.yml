@@ -12,7 +12,7 @@ jobs:
     
     defaults:
       run:
-        working-directory: ./viikko4/LaskinFX11/
+        working-directory: ./viikko5/LaskinFX11/
 
     steps:
     - uses: actions/checkout@v2
