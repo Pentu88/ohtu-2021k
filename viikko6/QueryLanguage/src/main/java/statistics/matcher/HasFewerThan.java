@@ -2,7 +2,7 @@ package statistics.matcher;
 
 import statistics.Player;
 
-public class HasFewerThan implements Matcher{
+public class HasFewerThan implements Matcher {
     private int value;
     private String category;
 
