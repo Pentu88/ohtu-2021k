@@ -1,7 +1,7 @@
 package statistics.matcher;
 
 public class QueryBuilder {
-    Matcher matcher;
+    private Matcher matcher;
     String preName = null;
 
     public QueryBuilder(){
@@ -10,7 +10,10 @@ public class QueryBuilder {
     }
 
     public Matcher build() {
-        return this.matcher;
+    	Matcher palautettava = matcher;
+    	matcher = new All();
+    	
+        return palautettava;
     }
 
     public QueryBuilder or(Matcher... matchers) {
@@ -29,7 +32,7 @@ public class QueryBuilder {
     public QueryBuilder playsIn(String team) {
         // printThisMather("playsIn");
 
-        this.matcher = new PlaysIn(team);
+        this.matcher = new And(matcher, new PlaysIn(team));
         return this;
     }
 
