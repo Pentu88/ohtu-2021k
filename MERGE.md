@@ -1,2 +1,2 @@
-- # 2 [New branch - DAO](https://github.com/sannahan/lukuvinkkikirjasto/pull/2)
+- #02 [New branch - DAO](https://github.com/sannahan/lukuvinkkikirjasto/pull/2)
 - #14 [Vinkin järjestys](https://github.com/sannahan/lukuvinkkikirjasto/pull/14)
