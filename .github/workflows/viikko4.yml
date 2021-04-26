@@ -70,13 +70,13 @@ jobs:
       run: ./gradlew test   
       
        
-  intJoukko:
+  IntJoukko:
   
     runs-on: ubuntu-latest
     
     defaults:
       run:
-        working-directory: ./viikko4/intJoukkoSovellus/
+        working-directory: ./viikko4/IntJoukkoSovellus/
 
     steps:
     - uses: actions/checkout@v2
