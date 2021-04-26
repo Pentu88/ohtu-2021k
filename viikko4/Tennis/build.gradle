@@ -13,5 +13,5 @@ dependencies {
 }
 
 application {
-    mainClass = 'App'
+    mainClass = 'ohtu.App'
 }
