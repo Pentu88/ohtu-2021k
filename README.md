@@ -30,7 +30,10 @@ https://github.com/Pentu88/ohtu-2021-viikko1
 
 ![GitHub Actions](https://github.com/Pentu88/ohtu-2021k/workflows/Viikko%206/badge.svg)
 - QueryLanguage
-- Pull request
+- Pull request ja refaktorointia
+
+Viikko 7
+- Pull requestin mergeäminen
 
 <link name=GH-WorkingDir href=https://dev.to/shofol/run-your-github-actions-jobs-from-a-specific-directory-1i9e>
 <link name=URL-Encoding href=https://secure.n-able.com/webhelp/NC_9-1-0_SO_en/Content/SA_docs/API_Level_Integration/API_Integration_URLEncoding.html>
