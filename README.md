@@ -11,17 +11,17 @@ https://github.com/Pentu88/ohtu-2021-viikko1
 - Verkkokauppa1
 
 ![GitHub Actions](https://github.com/Pentu88/ohtu-2021k/workflows/Viikko%203/badge.svg)
-- nhlreader
-- HelloCucumber
-- LoginCucumber
-- WebLogin
+- [nhlreader](viikko3/nhlreader/)
+- [HelloCucumber](viikko3/HelloCucumber/)
+- [LoginCucumber](viikko3/LoginCucumber/)
+- [WebLogin](viikko3/WebLogin/)
 
 ![GitHub Actions](https://github.com/Pentu88/ohtu-2021k/workflows/Viikko%204/badge.svg)
-- MockitoDemo
-- MaksukorttiMockito
-- Verkkokauppa
-- IntJoukko
-- Tennis
+- [MockitoDemo](viikko4/MockitoDemo/)
+- [MaksukorttiMockito](viikko4/MaksukorttiMockito/)
+- [Verkkokauppa](viikko4/Verkkokauppa/)
+- [IntJoukko](viikko4/IntJoukkoSovellus/)
+- [Tennis](viikko4/Tennis/)
 
 
 ![GitHub Actions](https://github.com/Pentu88/ohtu-2021k/workflows/Viikko%205/badge.svg)
