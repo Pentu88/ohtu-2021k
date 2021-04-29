@@ -5,10 +5,10 @@ import ohtu.kivipaperisakset.io.TextIO;
 
 import java.util.Scanner;
 
-public class Peli {
+public class KiviPaperiSaksetPeli {
     private static final IO textIO = new TextIO(new Scanner(System.in));
-    public static void peliKPS() {
-        Peli peli = new Peli();
+    public static void suoritaKPSPeli() {
+        KiviPaperiSaksetPeli peli = new KiviPaperiSaksetPeli();
         peli.suorita();
     }
 
