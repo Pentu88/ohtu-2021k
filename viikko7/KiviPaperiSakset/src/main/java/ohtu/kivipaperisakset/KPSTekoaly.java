@@ -8,7 +8,7 @@ public class KPSTekoaly {
 
     public void pelaa() {
         Tuomari tuomari = new Tuomari();
-        Tekoaly tekoaly = new Tekoaly();
+        TekoalyOld tekoaly = new TekoalyOld();
 
         System.out.println("Ensimmäisen pelaajan siirto: ");
         String ekanSiirto = scanner.nextLine();
