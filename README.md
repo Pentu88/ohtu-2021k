@@ -32,7 +32,8 @@ https://github.com/Pentu88/ohtu-2021-viikko1
 - QueryLanguage
 - Pull request ja refaktorointia
 
-Viikko 7
+![GitHub Actions](https://github.com/Pentu88/ohtu-2021k/workflows/Viikko%207/badge.svg)
+- KiviPaperiSakset
 - [Pull requestin mergeäminen](MERGE.md)
 
 <link name=GH-WorkingDir href=https://dev.to/shofol/run-your-github-actions-jobs-from-a-specific-directory-1i9e>
