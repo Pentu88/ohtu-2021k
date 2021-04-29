@@ -3,8 +3,8 @@
 https://github.com/Pentu88/ohtu-2021-viikko1
 
 ![GitHub Actions](https://github.com/Pentu88/ohtu-2021k/workflows/Viikko%201/badge.svg)
-- (RiippuvuuksienInjektointi1)[viikko1/RiippuvuuksienInjektointi1]
-- (NhlStatistics1)[viikko1/NhlStatistics1]
+- [RiippuvuuksienInjektointi1](viikko1/RiippuvuuksienInjektointi1)
+- [NhlStatistics1](viikko1/RiippuvuuksienInjektointi1)
 
 ![GitHub Actions](https://github.com/Pentu88/ohtu-2021k/workflows/Viikko%202/badge.svg)
 - gradleTest
