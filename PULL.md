@@ -1,1 +1,1 @@
-- #18 [muutos](https://github.com/Mazaalto/LukuvinkkisovellusRyhmaB/pull/18)
+- #18 [Parannusehdotus](https://github.com/Mazaalto/LukuvinkkisovellusRyhmaB/pull/18)
