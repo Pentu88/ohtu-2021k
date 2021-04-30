@@ -1,1 +1,1 @@
-- #18 [Parannusehdotus](https://github.com/Mazaalto/LukuvinkkisovellusRyhmaB/pull/18)
+- #18 [Tiivistä import rivejä](https://github.com/Mazaalto/LukuvinkkisovellusRyhmaB/pull/18)
