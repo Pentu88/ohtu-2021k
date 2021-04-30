@@ -30,7 +30,7 @@ https://github.com/Pentu88/ohtu-2021-viikko1
 
 ![GitHub Actions](https://github.com/Pentu88/ohtu-2021k/workflows/Viikko%206/badge.svg)
 - [QueryLanguage](viikko6/QueryLanguage/)
-- Pull request ja refaktorointia
+- [Pull request ja refaktorointia](PULL.md)
 
 ![GitHub Actions](https://github.com/Pentu88/ohtu-2021k/workflows/Viikko%207/badge.svg)
 - [KiviPaperiSakset](viikko7/KiviPaperiSakset/)
