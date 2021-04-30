@@ -3,10 +3,7 @@ package ohtu.kivipaperisakset;
 import ohtu.kivipaperisakset.io.*;
 import ohtu.kivipaperisakset.pelaajat.*;
 
-import java.util.Scanner;
-
 public abstract class KiviPaperiSakset {
-    // private static Pelaava pelaaja = new Pelaaja()
     protected IO textIO;
     protected Pelaava pelaaja1;
     protected Pelaava pelaaja2;
