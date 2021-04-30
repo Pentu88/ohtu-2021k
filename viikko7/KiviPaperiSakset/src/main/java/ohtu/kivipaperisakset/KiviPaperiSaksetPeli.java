@@ -1,9 +1,6 @@
 package ohtu.kivipaperisakset;
 
 import ohtu.kivipaperisakset.io.*;
-import java.lang.reflect.Method;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
 
 public class KiviPaperiSaksetPeli {
@@ -13,30 +10,7 @@ public class KiviPaperiSaksetPeli {
         peli.suorita();
     }
 
-    Map<String, String> peliTyypit;
-
-    public KiviPaperiSaksetPeli() {
-        this.peliTyypit = new HashMap<>();
-        this.peliTyypit.put("a", "peliPelaajaaVastaan");
-        this.peliTyypit.put("b", "peliHelppoAIVastaan");
-        this.peliTyypit.put("c", "peliHaastavaAIVastaan");
-    }
-
-    private void suorita() {
-        String vastaus = kysyKayttajaltaPelityyppi();
-
-        if (this.peliTyypit.containsKey(vastaus)) {
-            textIO.tulosta("Vastasit: " + vastaus);
-            try {
-                Class kps = Class.forName("KiviPaperiSakset");
-                // Method peliTehdas = kps.getMethod("peliHaastavaAIVastaan", IO.class);
-                // KiviPaperiSakset peli = (KiviPaperiSakset) peliTehdas.invoke(textIO);
-                // pelaa(peli);
-            } catch (Throwable e) { e.printStackTrace();}
-        }
-    }
-
-    private void suoritaOld(){
+    private void suorita(){
         KiviPaperiSakset peli = null;
 
         while (true) {
