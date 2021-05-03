@@ -1,4 +1,6 @@
 # ohtu-2021k
+([AYTKT20006](https://courses.helsinki.fi/fi/aytkt20006/135891626)) [Ohjelmistotuotanto avoin yliopisto 2021](https://ohjelmistotuotanto-hy-avoin.github.io/)
+
 [Miniprojekti](https://github.com/sannahan/lukuvinkkikirjasto)
 
 [ohtu-2021-viikko1](https://github.com/Pentu88/ohtu-2021-viikko1)
