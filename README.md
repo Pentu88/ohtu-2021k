@@ -1,6 +1,7 @@
 # ohtu-2021k
+[Miniprojekti](https://github.com/sannahan/lukuvinkkikirjasto)
 
-https://github.com/Pentu88/ohtu-2021-viikko1
+[ohtu-2021-viikko1](https://github.com/Pentu88/ohtu-2021-viikko1)
 
 ![GitHub Actions](https://github.com/Pentu88/ohtu-2021k/workflows/Viikko%201/badge.svg)
 - [RiippuvuuksienInjektointi1](viikko1/RiippuvuuksienInjektointi1)
